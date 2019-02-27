@@ -11,16 +11,7 @@
     <meta name="description" content="An HTML5, JavaScript-powered, interactive Country map.  This mobile-compatible, responsive map includes clickable provinces, intuitive zooming, location markers and more.  Easy to customize and install.">
     <link rel="shortcut icon" type="image/png" href="https://simplemaps.com/static/img/favicon.ico"/>
     <meta name="google-site-verification" content="P5vQlUeDR-LbsjILWVU44k0OeWgaFxMZVKuEOZm9-rY" />  
-    
-    <!-- Bootstrap CSS-->
-    <link href="https://simplemaps.com/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://simplemaps.com/static/css/styles.css" rel="stylesheet">
-    <link href="https://simplemaps.com/static/lib/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://simplemaps.com/static/lib/prism/prism.css" rel="stylesheet" type="text/css"  />
-    
-    
-    
-    <!--Page specific styles -->
+
     
         
     
@@ -37,67 +28,18 @@
     <div class="col-md-9">  
       <div id="map" class="center"></div>
     </div>
+    
+    
 	</div>
 </div>
 
 
-  
-
-<div class="container-fluid white-container bottom-border">
-
-     <!--scripts go here -->
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-36251759-1']);
-      _gaq.push(['_setDomainName', 'simplemaps.com']);
-      _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    <!-- Google Analytics End -->
-     
     <script src="https://simplemaps.com/static/lib/jquery/jquery-1.11.3.min.js"></script>
-    <script src="https://simplemaps.com/static/lib/bootstrap/js/bootstrap.min.js"></script>    
-    <script>
-      var stack=function(){
-          $('#nav-bar-collapse .nav-pills').addClass('nav-stacked');
-          $("#center-navbar").removeClass('center-navbar');      
-      }
-      
-      var unstack=function(){
-        $('#nav-bar-collapse .nav-pills').removeClass('nav-stacked');
-        $("#center-navbar").addClass('center-navbar');      
-      }
-    
-      //Stack menu when collapsed
-      $('#nav-bar-collapse').on('show.bs.collapse', function() {
-        stack();
-      });
-
-      //Unstack menu when not collapsed
-      $('#nav-bar-collapse').on('hide.bs.collapse', function() {
-        //unstack();
-      });    
-      
-      $( window ).resize(function() {
-        var width=$( window ).width();
-        if (width > 767){
-          unstack();
-        }
-        else{
-          stack();
-        }
-      });
-    </script>
+ 
     
     <script type="text/javascript" src="https://simplemaps.com/static/lib/prism/prism.js"></script>
         
+    
     
 <script>
 function choose_width(mapinfo){
