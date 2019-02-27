@@ -1,0 +1,2 @@
+# Afghanistan-JSMap
+Afghanistan Map
